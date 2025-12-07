@@ -16,13 +16,13 @@ jobs:
       - name: Checkout gh-pages
         uses: actions/checkout@v4
         with:
-        ref: gh-pages
+          ref: gh-pages
 
       - name: Ejecutar script de generación
         run: |
-        cd data-sync/public
-        chmod +x generate.sh
-        ./generate.sh
+          cd data-sync/public
+          chmod +x generate.sh
+          ./generate.sh
           
       - name: Configurar git
         run: |
