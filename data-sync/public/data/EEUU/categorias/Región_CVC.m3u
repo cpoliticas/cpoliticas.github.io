@@ -1,0 +1,11 @@
+#EXTM3U
+
+#EXTINF:-1 id="CVCEducation.us@SD" logo="https://i.imgur.com/tUgEAUJ.png" title="Education",Bolton Community Voice Channel (CVC) Education (Bolton CT) (480p)
+https://dlttx48mxf9m3.cloudfront.net/vod_clients/bolton/live/ch2/video.m3u8
+
+#EXTINF:-1 id="CVCGovernment.us@SD" logo="https://i.imgur.com/qLJhNhq.png" title="Legislative",Bolton Community Voice Channel (CVC) Government (Bolton CT) (480p)
+https://dlttx48mxf9m3.cloudfront.net/vod_clients/bolton/live/ch3/video.m3u8
+
+#EXTINF:-1 id="CVCPublic.us@SD" logo="https://i.imgur.com/KiTtkBQ.png" title="General",Bolton Community Voice Channel (CVC) Public (Bolton CT) (480p)
+https://dlttx48mxf9m3.cloudfront.net/vod_clients/bolton/live/ch1/video.m3u8
+

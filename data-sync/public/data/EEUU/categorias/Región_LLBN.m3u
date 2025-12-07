@@ -1,0 +1,29 @@
+#EXTM3U
+
+#EXTINF:-1 id="LLBNHisLight.us@SD" logo="https://i.imgur.com/YkLZjRw.png" title="Religious",Lighting Lives Blessing Nations His Light (LLBN) (720p)
+https://brightstar-hislight-pull-secure.akamaized.net/brightstarhislight/stream.m3u8
+
+#EXTINF:-1 id="LLBNHisWord.us@SD" logo="https://i.imgur.com/GbyHlS2.png" title="Religious",Lighting Lives Blessing Nations His Word (LLBN) (720p)
+https://brightstar-hisword-pull-secure.akamaized.net/brightstarhisword/stream.m3u8
+
+#EXTINF:-1 id="SmartLifeStyleTV.us@SD" logo="https://i.imgur.com/kHFlTEy.png" title="Lifestyle",Lighting Lives Blessing Nations Smart Life Style TV (LLBN) (720p)
+https://brightstar-sls-pull-secure.akamaized.net/brightstarsls/stream.m3u8
+
+#EXTINF:-1 id="LLBNTVArabic.us@SD" logo="https://i.imgur.com/fbrQpC4.png" title="Religious",Lighting Lives Blessing Nations TV Arabic (LLBN) (480p)
+https://brightstar-arabic-pull-secure.akamaized.net/brightstararabic/stream.m3u8
+
+#EXTINF:-1 id="LLBNTVChinese.us@SD" logo="https://i.imgur.com/C0jUDMn.png" title="Religious",Lighting Lives Blessing Nations TV Chinese (LLBN) (480p)
+https://brightstar-chinese-pull-secure.akamaized.net/brightstarchinese/stream.m3u8
+
+#EXTINF:-1 id="LLBNTVKorean.us@SD" logo="https://i.imgur.com/WsOfy19.png" title="Religious",Lighting Lives Blessing Nations TV Korean (LLBN) (480p)
+https://brightstar-korean-pull-secure.akamaized.net/brightstarkorean/stream.m3u8
+
+#EXTINF:-1 id="LLBNTVLatino.us@SD" logo="https://i.imgur.com/WsOfy19.png" title="Religious",Lighting Lives Blessing Nations TV Latino (LLBN) (480p)
+https://brightstar-latino-pull-secure.akamaized.net/brightstarlatino/stream.m3u8
+
+#EXTINF:-1 id="LLBNTVRomanian.us@SD" logo="https://i.imgur.com/WsOfy19.png" title="Religious",Lighting Lives Blessing Nations TV Romanian (LLBN) (480p)
+https://brightstar-romanian-pull-secure.akamaized.net/brightstarromanian/stream.m3u8
+
+#EXTINF:-1 id="LLBNTVSouthAsia.us@SD" logo="https://i.imgur.com/WsOfy19.png" title="Religious",Lighting Lives Blessing Nations TV South Asia (LLBN) (480p)
+https://brightstar-southasia-pull-secure.akamaized.net/brightstarsouthasia/stream.m3u8
+

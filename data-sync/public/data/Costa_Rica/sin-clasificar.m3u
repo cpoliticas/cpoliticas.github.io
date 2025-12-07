@@ -1,0 +1,197 @@
+#EXTM3U
+
+#EXTINF:-1 id="88Stereo.cr@SD" logo="https://i.imgur.com/i3YwORV.png" title="Music",88 Stereo (720p) [Not 24/7]
+http://k3.usastreams.com/CableLatino/88stereo/playlist.m3u8
+
+#EXTINF:-1 id="360RFTV.cr@SD" logo="https://i.imgur.com/EBtgnxR.png" title="General",360 RFTV (576p) [Geo-blocked]
+https://acceso.mediosdecostarica.com:3638/live/360rftvcrlive.m3u8
+
+#EXTINF:-1 id="OPA.cr@SD" logo="https://i.imgur.com/300c1ZH.png" title="Entertainment",¡OPA! (1080i) [Geo-blocked]
+https://5fc584f3f19c9.streamlock.net/genteopa/videogenteopa/playlist.m3u8
+
+#EXTINF:-1 id="AntenaSeisTV.cr@SD" logo="https://i.imgur.com/9Nh2mo9.png" title="General",Antena Seis TV (720p) [Geo-blocked]
+https://video1.azulstream.com:8081/antenaseistv/index.m3u8
+
+#EXTINF:-1 id="BestClasicosTV.cr@SD" logo="https://i.imgur.com/a/BRb8AVL.png" title="Undefined",BestClasicosTV (576p) [Geo-blocked]
+https://acceso.radiosportstv.online:3102/live/telemascrlive.m3u8
+
+#EXTINF:-1 id="Canal1.cr@SD" logo="https://i.ibb.co/KhNS8Dy/cropped-logoo-1.png" title="General",Canal 1 (720p)
+https://59ef525c24caa.streamlock.net/canal1cr/canal1cr/playlist.m3u8
+
+#EXTINF:-1 id="Canal2.cr@SD" logo="https://i.imgur.com/Nn8BtH5.png" title="General",Canal 2 (576p) [Geo-blocked]
+https://alba-cr-repretel-c2.stream.mediatiquestream.com/index.m3u8
+
+#EXTINF:-1 id="Canal3KMKTV.cr@SD" logo="https://i.imgur.com/sgRDRBK.jpg" title="Music",Canal 3 KMK TV (720p)
+https://live20.bozztv.com/giatv/giatv-KMKTV/KMKTV/chunks.m3u8
+
+#EXTINF:-1 id="Canal4.cr@SD" logo="https://i.imgur.com/5arZEgO.png" title="General",Canal 4 (720p) [Geo-blocked]
+https://alba-cr-repretel-c4.stream.mediatiquestream.com/index.m3u8
+
+#EXTINF:-1 id="Canal6.cr@SD" logo="https://i.imgur.com/nfKJftW.png" title="General",Canal 6 (720p) [Geo-blocked]
+https://alba-cr-repretel-c6.stream.mediatiquestream.com/index.m3u8
+
+#EXTINF:-1 id="Canal8.cr@SD" logo="https://i.imgur.com/nefPi2Y.png" title="General",Canal 8 (720p) [Not 24/7]
+https://mdstrm.com/live-stream-playlist/5a7b1e63a8da282c34d65445.m3u8
+
+#EXTINF:-1 id="Canal9.cr@SD" logo="https://i.imgur.com/7knekJU.png" title="General",Canal 9 (720p) [Geo-blocked]
+http://201.201.149.86:8080/livestream/stream.m3u8
+
+#EXTINF:-1 id="Canal10.cr@SD" logo="https://i.imgur.com/TO6WQbW.png" title="General",Canal 10 (720p) [Geo-blocked]
+https://acceso.mediosdecostarica.com:3606/live/canal10costaricalive.m3u8
+
+#EXTINF:-1 id="Canal11.cr@SD" logo="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/Repretel_11_logo.png/512px-Repretel_11_logo.png" title="General",Canal 11 (720p) [Geo-blocked]
+https://alba-cr-repretel-c11.stream.mediatiquestream.com/index.m3u8
+
+#EXTINF:-1 id="TVN14.cr@SD" logo="https://i.imgur.com/1aNEo6U.png" title="Undefined",Canal 14 San Carlos (720p) [Not 24/7]
+http://tvn.obix.tv:1935/TVN/CH14.stream_720p/playlist.m3u8
+
+#EXTINF:-1 id="CartagoMediosTV.cr@SD" logo="https://i.imgur.com/Vcd40AL.png" title="General",Cartago Medios TV (720p)
+https://acceso.radiosportstv.online:3368/live/cartagomediostvlive.m3u8
+
+#EXTINF:-1 id="ColosalTV.cr@SD" logo="https://i.imgur.com/0DZB3eB.png" title="Entertainment",Colosal TV (720p) [Not 24/7]
+http://tv.ticosmedia.com:1935/COLOSAL/COLOSAL/playlist.m3u8
+
+#EXTINF:-1 id="ComunicacionesJimenez.cr@SD" logo="https://i.imgur.com/4AvgY72.jpg" title="General",Comunicaciones Jiménez (720p) [Not 24/7]
+https://s1.tvdatta.com:3156/live/jimeneztvlive.m3u8
+
+#EXTINF:-1 id="CostaRicaChannel.cr@SD" logo="https://i.imgur.com/N4pFVVF.png" title="Culture;Travel",Costa Rica Channel (720p)
+https://panel2.streamingtv-mediacp.online:1936/rudcmzwtnh/rudcmzwtnh/playlist.m3u8
+
+#EXTINF:-1 id="CotoBrusTV.cr@SD" logo="https://i.ibb.co/vJZqrFY/a4ed367c69c23110d458a332af95be0be64566f288ccb5f261689344e6ba5e0d.png" title="General",Coto Brus TV (720p)
+https://cloudvideo.servers10.com:8081/8030/index.m3u8
+
+#EXTINF:-1 id="ExtremaKidsTV.cr@HD" logo="https://www.vivalivetv.com/public/files/shows/0/1/3027-294x165-FFFFFF.jpg" title="Animation;Kids",Extrema Kids TV [Not 24/7]
+https://627bb251f23c7.streamlock.net:444/ExtremaKids/ExtremaKids/playlist.m3u8
+
+#EXTINF:-1 id="ExtremaTV.cr@SD" logo="https://i.imgur.com/E9AuhOU.png" title="Religious",Extrema TV (720p)
+https://627bb251f23c7.streamlock.net:444/ExtremaTV/ExtremaTV/playlist.m3u8
+
+#EXTINF:-1 id="FUTV.cr@SD" logo="https://i.imgur.com/f8BkLql.png" title="Sports",FUTV (1080p)
+https://live20.bozztv.com/akamaissh101/ssh101/livefutvcr/playlist.m3u8
+
+#EXTINF:-1 id="GAMTVcr.cr@SD" logo="https://i.ibb.co/xFCS7wM/GAMTVCR.png" title="General",GAMTV.cr (720p)
+https://v2.azulstream.com:8081/gamtv/gamtv/index.m3u8
+
+#EXTINF:-1 id="GarabitoTV.cr@SD" logo="https://i.imgur.com/sAYNKJ8.png" title="General",Garabito TV (720p)
+https://59ef525c24caa.streamlock.net/garabitoTV/garabitotv/playlist.m3u8
+
+#EXTINF:-1 id="TicaVision.cr@SD" logo="https://i.imgur.com/mev90pC.jpg" title="General",HBTV TicaVisión (1080p)
+https://62fc643fbf1aa.streamlock.net/HBTV/HBTV/playlist.m3u8
+
+#EXTINF:-1 id="IQChannel.cr@SD" logo="https://i.imgur.com/hwuaomt.png" title="Music",IQ Channel (720p)
+https://rtmp.info/iqtv/envivo/playlist.m3u8
+
+#EXTINF:-1 id="LimonTV.cr@SD" logo="https://i.ibb.co/rdpcv7C/1689421727166.jpg" title="General",Limón TV (1080p) [Not 24/7]
+http://k4.usastreams.com/limontv1/limontv1/playlist.m3u8
+
+#EXTINF:-1 id="LosSantosTV.cr@SD" logo="https://i.imgur.com/5xw86wu.png" title="General",Los Santos TV (720p)
+https://lstv.duckdns.org:449/hls/lstv.m3u8
+
+#EXTINF:-1 id="LuzNacienteTV.cr@SD" logo="https://i.imgur.com/GC2lubh.png" title="Religious",Luz Naciente TV (720p)
+https://streeming.protoscr.com:3858/live/streeminglive.m3u8
+
+#EXTINF:-1 id="MetaVersusCR.cr@SD" logo="https://i.imgur.com/BKkljlc.png" title="Entertainment",MetaVersus CR (480p)
+https://vivo.solumedia.com:19360/metaversus/metaversus.m3u8
+
+#EXTINF:-1 id="MultizonasTV.cr@SD" logo="https://i.imgur.com/PD9TCu0.png" title="Education",Multizonas TV (720p)
+https://cloudvideo.servers10.com:8081/8068/index.m3u8
+
+#EXTINF:-1 id="NicoyaTV.cr@SD" logo="https://i.imgur.com/Lj2jRn3.png" title="General",Nicoya TV (720p) [Not 24/7]
+https://59ef525c24caa.streamlock.net/nicoyatv/nicoyatv/playlist.m3u8
+
+#EXTINF:-1 id="NorteInformativoTV.cr@SD" logo="https://i.ibb.co/2MNzXN7/Channels4-profile-9.jpg" title="News",Norte Informativo TV (240p)
+https://videohd.live:19360/8076/8076.m3u8
+
+#EXTINF:-1 id="QuinceUCR.cr@SD" logo="https://i.imgur.com/U7DUlem.png" title="Undefined",Quince UCR (720p) [Not 24/7]
+http://163.178.170.127:1935/quinceucr/quinceucr/playlist.m3u8
+
+#EXTINF:-1 id="RadioPuertoTV.cr@SD" logo="https://i.imgur.com/Qc3iBp5.png" title="General",Radio Puerto TV (720p)
+https://cloudvideo.servers10.com:8081/8256/index.m3u8
+
+#EXTINF:-1 id="RadioTurrialbaTVSports.cr@SD" logo="https://i.imgur.com/2ZcUXbE.png" title="Sports",Radio Turrialba TV Sports (576p) [Geo-blocked]
+https://live21.bozztv.com/akamaissh101/ssh101/turrialbatv/playlist.m3u8
+
+#EXTINF:-1 id="RetroxTV.cr@SD" logo="https://i.imgur.com/viJBL6f.png" title="Classic",Retrox TV (576p) [Geo-blocked]
+https://live21.bozztv.com/akamaissh101/ssh101/retroxcrtv/playlist.m3u8
+
+#EXTINF:-1 id="RTTV.cr@SD" logo="https://i.imgur.com/eTfsCCq.png" title="Undefined",RTTV (720p) [Not 24/7]
+https://cloudvideo.servers10.com:19360/8212/8212.m3u8
+
+#EXTINF:-1 id="RTVChirripo.cr@SD" logo="https://i.imgur.com/XWmwwbj.jpg" title="General",RTV Chirripó (720p)
+https://lstv.duckdns.org:449/hls/rtchirripo.m3u8
+
+#EXTINF:-1 id="SanJoseTV.cr@SD" logo="https://i.ibb.co/mbB8hqL/blanco-crop.png" title="Religious",San José TV (1080p)
+https://rtmp.info/sanjosetv/envivo/playlist.m3u8
+
+#EXTINF:-1 id="SanVitoTelevision.cr@SD" logo="https://i.imgur.com/Yd7JOxr.png" title="Undefined",San Vito Televisión (720p)
+https://stmv.streamingvip.click/sanvitotv/sanvitotv/playlist.m3u8
+
+#EXTINF:-1 id="SarapiquiTV.cr@SD" logo="https://i.imgur.com/obTnd32.png" title="General",Sarapiqui TV (720p) [Not 24/7]
+http://tiquiciatv.com:1935/stv/web/playlist.m3u8
+
+#EXTINF:-1 id="SOYPlanchaTV.cr@SD" logo="https://i.ibb.co/P4kpMgk/1689344714578.jpg" title="Music",SOY Plancha TV (720p)
+https://59ef525c24caa.streamlock.net/vmtv/soyplancha/playlist.m3u8
+
+#EXTINF:-1 id="SuperCable.cr@SD" logo="https://i.imgur.com/KYtJp8F.png" title="Entertainment",Super Cable
+http://191.102.39.254:5000/live/5up3r5/playlist.m3u8
+
+#EXTINF:-1 id="TDtv.cr@SD" logo="https://i.imgur.com/OFSOvpd.jpg" title="General",TDtv (720p)
+https://cloudvideo.servers10.com:8081/8230/index.m3u8
+
+#EXTINF:-1 id="TeleUno.cr@SD" logo="https://i.imgur.com/eRwYxc2.png" title="Undefined",Tele Uno (720p) [Not 24/7]
+http://tv.teleunotv.cr:1935/TVUNO/TVUNO/playlist.m3u8
+
+#EXTINF:-1 id="TeleBrunca.cr@SD" logo="https://i.imgur.com/m3xu6Ms.png" title="General",TeleBrunca (720p) [Not 24/7]
+https://59ef525c24caa.streamlock.net/telebrunca/telebrunca/playlist.m3u8
+
+#EXTINF:-1 id="Telefides.cr@SD" logo="https://i.ibb.co/yn5M8dw/telefides-costa-rica.png" title="Religious",Telefides (720p)
+https://s2.cwebtv.net:4433/telefides/telefides/playlist.m3u8
+
+#EXTINF:-1 id="TeleMas.cr@SD" logo="https://i.imgur.com/5Rc8mA5.png" title="Entertainment",TeleMas (480p) [Geo-blocked]
+https://mist01.homestream.fun/hls/tlmas904/0_1/index.m3u8
+
+#EXTINF:-1 id="TeleredTelevision.cr@SD" logo="https://i.imgur.com/cIvfnsa.jpg" title="General",Telered Television (576p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://teleredtelevision.com/
+
+#EXTINF:-1 id="TeleSURCostaRica.cr@SD" logo="https://i.imgur.com/KUpgeOf.png" title="Undefined",TeleSUR Costa Rica (720p) [Not 24/7]
+https://s1.tvdatta.com:3582/live/telesurlive.m3u8
+
+#EXTINF:-1 id="Teletica7.cr@SD" logo="https://i.imgur.com/ctnvE3c.png" title="General",Teletica 7 (720p) [Geo-blocked]
+#EXTVLCOPT:http-referrer=https://bradmax.com/client/embed-player/c7c83ebb46fa89529a7383d933e2038729f8e4c9_13428?id=tv7&mediaUrl=https://cdn01.teletica.com/TeleticaLiveStream/Stream/playlist_dvr.m3u8&mediaUrl2=https://6zklxk9bdw9b-hls-live.5centscdn.com/TeleticaLiveStream/d072c3a8dde8622c607ecd258fd628e8.sdp/playlist_dvr.m3u8
+
+#EXTINF:-1 id="TigoSports.cr@SD" logo="https://i.imgur.com/UrsLSRs.png" title="Sports",Tigo Sports (720p) [Geo-blocked]
+https://live20.bozztv.com/akamaissh101/ssh101/livetigocr/playlist.m3u8
+
+#EXTINF:-1 id="Trivision36.cr@SD" logo="https://i.imgur.com/aadWnIx.jpg" title="General",Trivisión 36 (1080p)
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36 CrKey/1.44.191160
+
+#EXTINF:-1 id="TVSurCanal9.cr@SD" logo="https://i.imgur.com/7HbISMV.png" title="Undefined",TV Sur Canal 9 (620p) [Not 24/7]
+http://tv.ticosmedia.com:1935/TVSUR/TVSUR/playlist.m3u8
+
+#EXTINF:-1 id="TVSurCanal14.cr@SD" logo="https://i.imgur.com/OpHYYZA.png" title="Undefined",TV Sur Canal 14 (1080p)
+https://k20.usastreams.com:8081/tvsur/index.m3u8
+
+#EXTINF:-1 id="UrbanoTV.cr@SD" logo="https://i.imgur.com/KVVU9PI.png" title="Music",Urbano TV (720p)
+https://59ef525c24caa.streamlock.net/tvurbano/tvurbano/playlist.m3u8
+
+#EXTINF:-1 id="VideoTourChannel.cr@SD" logo="https://i.imgur.com/zEi8eMC.png" title="Music",Video Tour Channel (480p) [Not 24/7]
+http://k4.usastreams.com/videotour/videotour/playlist.m3u8
+
+#EXTINF:-1 id="VintageMusic.cr@SD" logo="https://i.imgur.com/KImqYnN.jpeg" title="Music",Vintage Music (720p)
+https://59ef525c24caa.streamlock.net/vmtv/tvvintage/playlist.m3u8
+
+#EXTINF:-1 id="VMLatino.cr@SD" logo="https://i.imgur.com/Dvo1b82.png" title="Music",VM Latino (720p) [Not 24/7]
+https://59ef525c24caa.streamlock.net/vmtv/vmlatino/playlist.m3u8
+
+#EXTINF:-1 id="VoiceOverRadioTV.cr@SD" logo="https://i.imgur.com/HzGs1Eh.png" title="Music",VoiceOver Radio TV (720p)
+https://cloudvideo.servers10.com:8081/8198/index.m3u8
+
+#EXTINF:-1 id="XpressoJovenRadio.cr@SD" logo="https://i.imgur.com/o7MCfuA.jpg" title="Music",Xpresso Joven Radio (720p)
+https://stmv.streamingvip.click/xpressojovenradiotv/xpressojovenradiotv/playlist.m3u8
+
+#EXTINF:-1 id="ZonaMusicTV.cr@SD" logo="https://i.imgur.com/TJ5l9iI.png" title="Music",Zona Music TV (1080p)
+https://acceso.radiosportstv.online:3022/stream/play.m3u8
+
+#EXTINF:-1 id="ZurquiTV.cr@SD" logo="https://i.imgur.com/XvktUBB.jpg" title="General",Zurquí TV (720p)
+https://videoserver.tmcreativos.com:19360/gesfnvpamn/gesfnvpamn.m3u8
+

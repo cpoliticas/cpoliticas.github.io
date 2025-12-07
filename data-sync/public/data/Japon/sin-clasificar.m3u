@@ -1,0 +1,53 @@
+#EXTM3U
+
+#EXTINF:-1 id="CGNTVJapan.jp@SD" logo="https://i.imgur.com/5LNZeVq.png" title="Religious",CGNTV Japan (1080p)
+#EXTVLCOPT:http-referrer=http://japan.cgntv.net/HD_player_jp.html
+
+#EXTINF:-1 id="Dlife.jp@SD" logo="" title="Series",Dlife (1080p)
+https://43.100.9.67/api/streams/live/cs312/1080p/mpegts
+
+#EXTINF:-1 id="GolfNetwork.jp@SD" logo="https://i.imgur.com/s6lmfXF.png" title="Sports",Golf Network (540p)
+http://202.60.106.14:8080/1335/playlist.m3u8
+
+#EXTINF:-1 id="GSTV.jp@SD" logo="https://i.imgur.com/ECnVG5I.png" title="Shop",GSTV (720p)
+https://japaneast.av.mk.io/mediakindcdn-mediakind/b8278d70-0a5f-400c-9b16-c7acf7004355/index.qfm/manifest(format=m3u8-cmaf)
+
+#EXTINF:-1 id="JOABDTV.jp@SD" logo="https://i.imgur.com/WxtftlO.png" title="Education",JOAB-DTV
+http://171.244.62.178/jptv2/get.php?id=hnsnBqHDt2EXQupW2soBjw==
+
+#EXTINF:-1 id="JOAKDTV.jp@SD" logo="https://i.imgur.com/fAZ2BEZ.png" title="General",JOAK-DTV (1080p)
+http://171.244.62.178/jptv2/get.php?id=Zt19NGeOuIq3EwLPZh_KvQ==
+
+#EXTINF:-1 id="JOAXDTV.jp@SD" logo="https://i.imgur.com/IxD8V5X.png" title="General",JOAX-DTV
+http://171.244.62.178/jptv2/get.php?id=4SlJSS46Vw5igmOdvfKMww==
+
+#EXTINF:-1 id="JOCXDTV.jp@SD" logo="https://i.imgur.com/sEWDmMD.png" title="General",JOCX-DTV
+http://171.244.62.178/jptv2/get.php?id=uAJJq7DD6hKyPLoaMOBSUA==
+
+#EXTINF:-1 id="JOEXDTV.jp@SD" logo="https://i.imgur.com/YCqB5Kj.png" title="General",JOEX-DTV
+http://171.244.62.178/jptv2/get.php?id=aNwnFAidrAjzqK5Wo0KvWw==
+
+#EXTINF:-1 id="JORXDTV.jp@SD" logo="https://i.imgur.com/dUn2GRn.png" title="General",JORX-DTV
+http://171.244.62.178/jptv2/get.php?id=p1cu_Z3QI6VV01VJmw8vJQ==
+
+#EXTINF:-1 id="JOTXDTV.jp@SD" logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/TV_Tokyo_%28Japanese%29_2023.svg/512px-TV_Tokyo_%28Japanese%29_2023.svg.png" title="General",JOTX-DTV
+http://171.244.62.178/jptv2/get.php?id=2eX5WUIdzetyhgy8L8plEQ==
+
+#EXTINF:-1 id="MNBWorld.mn@SD" logo="https://i.imgur.com/PHlj84Q.png" title="General",MNB World (1080p)
+https://cdn4.skygo.mn/live/disk1/MNB_World/HLSv3-FTA/MNB_World.m3u8
+
+#EXTINF:-1 id="NHKKishouSaigai.jp@SD" logo="https://i.imgur.com/oWKCBIz.png" title="Weather",NHK Kishou Saigai (360p) [Not 24/7]
+https://newssimul-stream.nhk.jp/hls/live/2010561/nhknewssimul/master.m3u8
+
+#EXTINF:-1 id="QVC.jp@SD" logo="https://i.imgur.com/6TWUVrh.png" title="Shop",QVC Japan (720p)
+https://cdn-live1.qvc.jp/iPhone/1501/1501.m3u8
+
+#EXTINF:-1 id="ShopChannel.jp@SD" logo="https://i.postimg.cc/wMqPSBfX/shopchannel.png" title="Shop",Shop Channel (1080p) [Not 24/7]
+https://stream3.shopch.jp/HLS/master.m3u8
+
+#EXTINF:-1 id="Weathernews.jp@SD" logo="https://i.imgur.com/A8uRSTS.png" title="Weather",Weathernews (720p)
+https://weather-live-hls01e.akamaized.net/ade36978-4ad3-48de-91ab-7d6edd0b6388/11ed8ed8ca.ism/manifest(format=m3u8-aapl-v3,audio-only=false).m3u8
+
+#EXTINF:-1 id="WOWOWPrime.jp@SD" logo="https://i.imgur.com/vACq7w8.png" title="Undefined",WOWOW Prime (720p)
+http://171.244.62.178/jptv2/get.php?id=CXrJaWUllYhR6k5e0_K46w==
+
