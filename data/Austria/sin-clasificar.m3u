@@ -1,0 +1,113 @@
+#EXTM3U
+
+#EXTINF:-1 id="AntenneKaernten.at@SD" logo="https://i.imgur.com/nUKFDsb.jpeg" title="Music",Antenne Kaernten (720p)
+https://60efd7a2b4d02.streamlock.net/a_kaernten/ngrp:livestream_all/playlist.m3u8
+
+#EXTINF:-1 id="AntenneSteiermark.at@SD" logo="https://i.imgur.com/qnappvd.jpeg" title="Music",Antenne Steiermark (720p)
+https://60efd7a2b4d02.streamlock.net/a_steiermark/ngrp:livestream_all/playlist.m3u8
+
+#EXTINF:-1 id="AntenneVorarlberg.at@SD" logo="https://i.imgur.com/GW750Zc.png" title="Music",Antenne Vorarlberg (720p) [Not 24/7]
+https://5857db5306b83.streamlock.net/antennevorarlberg-live/_definst_/mp4:livestream/playlist.m3u8
+
+#EXTINF:-1 id="ATV.at@SD" logo="https://i.imgur.com/1pA0Tid.png" title="General",ATV (576p)
+https://strm.hdtvizlecanli.com/live/atv.m3u8
+
+#EXTINF:-1 id="ATV2.at@HD" logo="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Logo_ATV2.svg/512px-Logo_ATV2.svg.png" title="General",ATV2 HD
+https://viamotionhsi.netplus.ch/live/eds/atv/browser-dash/atv.mpd
+
+#EXTINF:-1 id="BalkanRadioSalzburg.at@SD" logo="https://i.imgur.com/UDyxgXf.png" title="Entertainment",Balkan Radio Salzburg (480p)
+https://channel.streams.ovh:1936/balkanradiosalzburgtv/balkanradiosalzburgtv/playlist.m3u8
+
+#EXTINF:-1 id="FS1Salzburg.at@SD" logo="https://i.imgur.com/74gMaPK.png" title="General",FS1 Salzburg (720p) [Not 24/7]
+http://stream.fs1.tv:8080/hls/webstream.m3u8
+
+#EXTINF:-1 id="HitradioO3.at@SD" logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Hitradio_%C3%963.svg/512px-Hitradio_%C3%963.svg.png" title="Music",Hitradio O3
+https://studiocam-oe3.mdn.ors.at/orf/studiocam_oe3/q6a/manifest.mpd
+
+#EXTINF:-1 id="K19.at@SD" logo="https://i.imgur.com/l4atkvs.png" title="Sports",K19
+https://1853185335.rsc.cdn77.org/K192/tv/playlist.m3u8
+
+#EXTINF:-1 id="KTV.at@SD" logo="https://i.imgur.com/RYbR4Sf.png" title="Religious",K-TV (720p)
+https://d1pz8zear993v8.cloudfront.net/hlsme/kathtv.m3u8
+
+#EXTINF:-1 id="KITTV.at@SD" logo="https://i.imgur.com/5rDo1Za.png" title="Religious",KIT-TV (720p)
+https://everest.pa-hosting.de:3591/live/joseflive.m3u8
+
+#EXTINF:-1 id="Kronehit.at@SD" logo="https://i.imgur.com/dQJQv1X.png" title="Music",Kronehit (1080p)
+https://bitcdn-kronehit.bitmovin.com/v2/hls/playlist.m3u8
+
+#EXTINF:-1 id="LandleTV.at@SD" logo="https://i.imgur.com/omLVQ4r.png" title="General",Ländle TV (1080p) [Not 24/7]
+https://streaming13.huberwebmedia.at/LiveApp/streams/985585225397790082777809.m3u8
+
+#EXTINF:-1 id="N24DokuAustria.at@SD" logo="https://i.imgur.com/qgoXJu4.png" title="Documentary",N24 Doku
+http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/60080e8a4bf36000076a81b1/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=1b1f1163-4b81-11ef-a8ac-e146e4e7be02&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=3c70bac9-b6d8-44d7-bde9-a992a6bfd7ab
+
+#EXTINF:-1 id="Okto.at@SD" logo="https://i.imgur.com/9XfhgbS.png" title="General",Okto TV (1080p)
+https://cdn3.wowza.com/1/MHFtazJReW5rOFhP/N2NWNDZ2/hls/live/playlist.m3u8
+
+#EXTINF:-1 id="ORF1.at@HD" logo="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/ORF_1_2019.svg/512px-ORF_1_2019.svg.png" title="General",ORF 1 HD (720p)
+https://viamotionhsi.netplus.ch/live/eds/orf1/browser-HLS8/orf1.m3u8
+
+#EXTINF:-1 id="ORF2.at@SD" logo="https://i.imgur.com/svgv2q5.png" title="General",ORF 2 (720p)
+https://strm.hdtvizlecanli.com/live/orf2.m3u8
+
+#EXTINF:-1 id="ORF2Tirol.at@HD" logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/ORF2_logo_n.svg/512px-ORF2_logo_n.svg.png" title="General",ORF 2 Tirol HD (720p)
+https://viamotionhsi.netplus.ch/live/eds/orf2/browser-dash/orf2.mpd
+
+#EXTINF:-1 id="ORFIII.at@HD" logo="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/ORF_III_Logo_Monochrom.svg/512px-ORF_III_Logo_Monochrom.svg.png" title="Culture",ORF III HD (720p)
+https://orf3.mdn.ors.at/orf/orf3/qxa/manifest.m3u8
+
+#EXTINF:-1 id="ORFKids.at@SD" logo="https://i.imgur.com/Zxuah2b.png" title="Kids",ORF Kids (720p)
+https://web12.mdn.ors.at/orf/web12/qxa/manifest.mpd
+
+#EXTINF:-1 id="P3tv.at@SD" logo="https://i.imgur.com/qUOFiEe.png" title="General",P3tv (720p) [Not 24/7]
+http://p3-6.mov.at:1935/live/weekstream/master.m3u8
+
+#EXTINF:-1 id="R9.at@SD" logo="https://i.imgur.com/SVJiXxh.png" title="Undefined",R9 (720p) [Not 24/7]
+https://ms01.w24.at/R9/smil:liveeventR9.smil/playlist.m3u8
+
+#EXTINF:-1 id="RakutenTVActionMovies.es@Austria" logo="https://i.imgur.com/Meew6eX.png" title="Movies",Rakuten TV Action Movies Austria (720p)
+https://0f846627524f4dd2995e93581379db82.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Samsung-at_RakutenActionMovies-1/playlist.m3u8
+
+#EXTINF:-1 id="RakutenTVComedyMovies.es@Austria" logo="https://i.imgur.com/Meew6eX.png" title="Movies",Rakuten TV Comedy Movies Austria (720p)
+https://7ed752b220a441b7b22bdf697c6c4df8.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Samsung-at_RakutenComedyMovies-1/playlist.m3u8
+
+#EXTINF:-1 id="RakutenTVDramaMovies.es@Austria" logo="https://i.imgur.com/Meew6eX.png" title="Movies",Rakuten TV Drama Movies Austria (720p)
+https://df1aa472ff5b4780a8d91fe319778b4d.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Samsung-at_RakutenTVShows-1/playlist.m3u8
+
+#EXTINF:-1 id="RakutenTVFamilyMovies.es@Austria" logo="https://i.imgur.com/Meew6eX.png" title="Family;Movies",Rakuten TV Family Movies Austria (720p)
+https://9fa8baba055e4a52b0a8d1ae7d78bed8.mediatailor.us-east-1.amazonaws.com/v1/master/44f73ba4d03e9607dcd9bebdcb8494d86964f1d8/Samsung-at_RakutenFamily-1/playlist.m3u8
+
+#EXTINF:-1 id="RTV.at@SD" logo="https://upload.wikimedia.org/wikipedia/commons/e/ed/RTV_OOE_Logo.png" title="Undefined",RTV (1080p) [Not 24/7]
+http://iptv.rtv-ooe.at/stream.m3u8
+
+#EXTINF:-1 id="SchladmingDachsteinTV.at@SD" logo="https://i.ibb.co/VjnzhMM/Logo-Schl-Dachstein-TV-HP-JPG.jpg" title="Travel",Schladming-Dachstein TV (720p)
+https://m317.video-stream-hosting.de/gzSoftware-live/_definst_/smil:livestream.smil/playlist.m3u8
+
+#EXTINF:-1 id="ServusTV.at@SD" logo="https://i.imgur.com/6W637Gn.png" title="Movies",ServusTV (1080p) [Geo-blocked]
+https://stv-live.akamaized.net/hls/live/2031011/lingeoSTVATwebPri/master.m3u8
+
+#EXTINF:-1 id="ServusTV.at@HD" logo="https://i.imgur.com/6W637Gn.png" title="Movies",ServusTV HD
+https://viamotionhsi.netplus.ch/live/eds/servustvhd/browser-HLS8/servustvhd.m3u8
+
+#EXTINF:-1 id="SteiermarkTV.at@SD" logo="https://i.imgur.com/AJrUPze.png" title="General",Steiermark TV (1080p)
+https://h056.video-stream-hosting.de/easycast8-live/_definst_/mp4:livestreamhd4/playlist.m3u8?ref=
+
+#EXTINF:-1 id="SwamijiTVAustralian.at@SD" logo="https://i.imgur.com/nrLcuzs.png" title="Outdoor",Swamiji TV Australian (1080p) [Not 24/7]
+https://stream.swamiji.tv/YogaIPTV/smil:YogaStreamAU.smil/playlist.m3u8
+
+#EXTINF:-1 id="SwamijiTVEuropean.at@SD" logo="https://i.imgur.com/nrLcuzs.png" title="Outdoor",Swamiji TV European (1080p) [Not 24/7]
+https://stream.swamiji.tv/YogaIPTV/smil:YogaStream.smil/playlist.m3u8
+
+#EXTINF:-1 id="TirolTV.at@SD" logo="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/TIROL_TV_Logo_2019.png/512px-TIROL_TV_Logo_2019.png" title="Undefined",Tirol TV (720p) [Not 24/7]
+https://streaming14.huberwebmedia.at/LiveApp/streams/livestream.m3u8
+
+#EXTINF:-1 id="TV1Oberosterreich.at@SD" logo="https://i.postimg.cc/Qx34YmYp/tv1oberosterreich.png" title="Undefined",TV 1 Oberösterreich (1080p)
+https://streaming10.huberwebmedia.at/LiveApp/streams/238985177034727564068269_adaptive.m3u8
+
+#EXTINF:-1 id="UpperaBalkan.at@SD" logo="https://i.imgur.com/eqcmi5G.png" title="Undefined",Uppera Balkan (720p) [Geo-blocked]
+http://89.187.168.245:8080/live/sUPPERchannel2/index.m3u8
+
+#EXTINF:-1 id="W24.at@SD" logo="https://i.imgur.com/FpVNrxk.png" title="Undefined",W24 (720p) [Not 24/7]
+https://ms01.w24.at/W24/smil:liveevent.smil/playlist.m3u8
+
