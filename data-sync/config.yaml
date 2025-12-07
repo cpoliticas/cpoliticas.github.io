@@ -1,0 +1,14 @@
+paises:
+  - Costa Rica
+  - EEUU
+  - Alemania
+  - Suiza
+  - Austria
+  - Japon
+  - Francia
+  - España
+
+estructura:
+  Favoritos: []
+  Categorias: {}
+  SinClasificar: []
