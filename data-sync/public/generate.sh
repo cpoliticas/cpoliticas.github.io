@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -e
+set -x
 
 # Ruta del repositorio público
 BASE_URL="https://raw.githubusercontent.com/iptv-org/iptv/master/channels"
