@@ -239,6 +239,35 @@ for pais in paises:
 
     print(f" - Generado para {pais}: {country_dir}")
 
+# ============================
+# GENERAR PLAYLIST MAESTRA
+# ============================
+
+main_path = os.path.join(REPO_ROOT, "data-sync", "public", "main.m3u")
+
+with open(main_path, "w", encoding="utf-8") as f:
+    f.write("#EXTM3U\n\n")
+
+    for pais in paises:
+        country_slug = slug(pais)
+        base_url = f"https://cpoliticas.github.io/data-sync/public/data/{country_slug}"
+
+        # Entrada principal por país → sin clasificar
+        f.write(f'#EXTINF:-1,{pais} (Sin clasificar)\n')
+        f.write(f'{base_url}/sin-clasificar.m3u\n\n')
+
+        # Categorías
+        categorias_dir = os.path.join(OUTPUT_BASE, country_slug, "categorias")
+        if os.path.isdir(categorias_dir):
+            for fname in sorted(os.listdir(categorias_dir)):
+                if fname.endswith(".m3u"):
+                    categoria = fname.replace(".m3u","").replace("_"," ")
+                    f.write(f'#EXTINF:-1,{pais} - {categoria}\n')
+                    f.write(f'{base_url}/categorias/{fname}\n\n')
+
+print(f"Playlist maestro generado en: {main_path}")
+
+
 print("Generación completa.")
 PY
 
