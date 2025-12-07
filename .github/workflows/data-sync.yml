@@ -20,8 +20,9 @@ jobs:
 
       - name: Ejecutar script de generación (desde data-sync/public)
         run: |
-          chmod +x data-sync/public/generate.sh
-          ./data-sync/public/generate.sh
+          chmod +x data-sync/scripts/generate.sh
+          ./data-sync/scripts/generate.sh
+
 
       - name: Configurar git
         run: |
