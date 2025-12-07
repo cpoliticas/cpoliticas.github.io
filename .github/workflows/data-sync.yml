@@ -1,7 +1,12 @@
-name: build
+name: Actualizar datos y publicar en gh-pages
 
 on:
+  schedule:
+    - cron: "0 0 * * *"
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
@@ -13,26 +18,21 @@ jobs:
         with:
           ref: main
 
-      - name: Ejecutar script de generación
+      - name: Ejecutar script de generación (desde data-sync/public)
         run: |
           chmod +x data-sync/public/generate.sh
           ./data-sync/public/generate.sh
 
       - name: Configurar git
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
 
       - name: Commit de cambios en main
         run: |
-          git add -A
-          git commit -m "Actualizar data" || echo "No hay cambios que commitear"
-
-      - name: Push a main
-        run: |
+          git add .
+          git commit -m "Actualizar datos automáticos" || echo "Sin cambios"
           git push origin main
-
-      # ==== PUBLICACIÓN EN GH-PAGES ====
 
       - name: Checkout gh-pages en carpeta separada
         uses: actions/checkout@v4
@@ -42,16 +42,11 @@ jobs:
 
       - name: Copiar datos generados hacia gh-pages
         run: |
-          rm -rf ghp/*
-          cp -r public/generated/* ghp/
+          rsync -av --delete data-sync/public/data/ ghp/data/
 
       - name: Commit en gh-pages
         run: |
           cd ghp
-          git add -A
-          git commit -m "Publicación automática" || echo "No hay cambios que commitear"
-
-      - name: Push a gh-pages
-        run: |
-          cd ghp
+          git add .
+          git commit -m "Actualizar datos publicados" || echo "Sin cambios"
           git push origin gh-pages
