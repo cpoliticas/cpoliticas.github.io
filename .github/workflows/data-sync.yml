@@ -2,7 +2,7 @@ name: Actualizar datos y publicar en gh-pages
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # una vez al día
+    - cron: "0 0 * * *"
   workflow_dispatch:
 
 permissions:
@@ -20,10 +20,10 @@ jobs:
 
       - name: Ejecutar script de generación
         run: |
-          cd data-sync/public
-          chmod +x generate.sh
-          ./generate.sh
-          
+          cd data-sync
+          chmod +x public/generate.sh
+          ./public/generate.sh
+
       - name: Configurar git
         run: |
           git config --global user.name "github-actions"
