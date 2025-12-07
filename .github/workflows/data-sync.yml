@@ -18,11 +18,10 @@ jobs:
         with:
           ref: gh-pages
 
-      - name: Ejecutar script de generación
+      - name: Ejecutar script de generación (desde raíz)
         run: |
-          cd data-sync
-          chmod +x public/generate.sh
-          ./public/generate.sh
+          chmod +x data-sync/public/generate.sh
+          ./data-sync/public/generate.sh
 
       - name: Configurar git
         run: |
