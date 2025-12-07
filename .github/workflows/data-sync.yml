@@ -13,17 +13,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout main
+      - name: Checkout gh-pages
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+        ref: gh-pages
 
       - name: Ejecutar script de generación
         run: |
-          cd data-sync/public
-          chmod +x generate.sh
-          ./generate.sh
-
+        cd data-sync/public
+        chmod +x generate.sh
+        ./generate.sh
+          
       - name: Configurar git
         run: |
           git config --global user.name "github-actions"
