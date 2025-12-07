@@ -1,38 +1,56 @@
-name: data-sync
+name: Actualizar datos y publicar en gh-pages
 
 on:
   schedule:
-    - cron: "0 6 * * *"   # Una vez al día, a las 06:00 UTC
-  workflow_dispatch:       # Para ejecución manual desde GitHub
+    - cron: "0 0 * * *"   # una vez al día
+  workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
-
-      - name: Instalar yq
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y yq
-
-      - name: Dar permisos al script
-        run: chmod +x data-sync/scripts/generate.sh
-
-      - name: Ejecutar generador
-        run: ./data-sync/scripts/generate.sh
-
-      - name: Commit de salida si hubo cambios
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git diff --cached --quiet || git commit -m "Auto-update M3U files"
-
-      - name: Push cambios
-        uses: ad-m/github-push-action@v0.6.0
+      - name: Checkout main
+        uses: actions/checkout@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
+          fetch-depth: 0
+
+      - name: Ejecutar script de generación
+        run: |
+          cd data-sync/public
+          chmod +x generate.sh
+          ./generate.sh
+
+      - name: Configurar git
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+      - name: Commit de cambios en main
+        run: |
+          git add .
+          git commit -m "Actualizar datos automáticos" || echo "Sin cambios"
+
+      - name: Push a main
+        run: |
+          git push origin main
+
+      - name: Checkout gh-pages
+        run: |
+          git checkout gh-pages
+
+      - name: Copiar datos generados hacia gh-pages
+        run: |
+          rsync -av --delete data-sync/public/data/ data/
+
+      - name: Commit en gh-pages
+        run: |
+          git add .
+          git commit -m "Actualizar datos publicados" || echo "Sin cambios"
+
+      - name: Push a gh-pages
+        run: |
+          git push origin gh-pages
