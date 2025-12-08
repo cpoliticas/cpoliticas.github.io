@@ -1,85 +1,54 @@
-name: Actualizar datos y publicar en gh-pages
+name: Data Sync
 
 on:
-  schedule:
-    - cron: "0 0 * * *"
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
-  build:
+  sync_data:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout main
-        uses: actions/checkout@v4
+      - name: Checkout main branch
+        uses: actions/checkout@v3
         with:
-          ref: main
+          fetch-depth: 0
 
-      - name: Ejecutar script de generación (desde data-sync/public)
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install PyYAML
         run: |
-          chmod +x data-sync/scripts/generate.sh
-          ./data-sync/scripts/generate.sh
+          pip install pyyaml
 
-      # NUEVO: Generar el archivo global main.m3u
-      - name: Generar archivo main.m3u
+      - name: Fetch remote data
         run: |
-          echo "#EXTM3U" > data-sync/public/main.m3u
-          echo "" >> data-sync/public/main.m3u
+          bash data-sync/scripts/fetch.sh
 
-          for d in data-sync/public/data/*; do
-            if [ -d "$d" ]; then
-              country=$(basename "$d")
-              echo "# -------- $country --------" >> data-sync/public/main.m3u
-              echo "" >> data-sync/public/main.m3u
-
-              # Favoritos + sin clasificar
-              if [ -f "$d/favoritos.m3u" ]; then
-                cat "$d/favoritos.m3u" >> data-sync/public/main.m3u
-                echo "" >> data-sync/public/main.m3u
-              fi
-
-              if [ -f "$d/sin-clasificar.m3u" ]; then
-                cat "$d/sin-clasificar.m3u" >> data-sync/public/main.m3u
-                echo "" >> data-sync/public/main.m3u
-              fi
-
-              # Categorías
-              if [ -d "$d/categorias" ]; then
-                for f in "$d"/categorias/*.m3u; do
-                  [ -f "$f" ] && cat "$f" >> data-sync/public/main.m3u && echo "" >> data-sync/public/main.m3u
-                done
-              fi
-            fi
-          done
-
-      - name: Configurar git
+      - name: Generate categorized and master M3U files
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          bash data-sync/scripts/generate.sh
 
-      - name: Commit de cambios en main
-        run: |
-          git add .
-          git commit -m "Actualizar datos automáticos" || echo "Sin cambios"
-          git push origin main
-
-      - name: Checkout gh-pages en carpeta separada
-        uses: actions/checkout@v4
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v3
         with:
           ref: gh-pages
           path: ghp
 
-      - name: Copiar datos generados hacia gh-pages
+      - name: Sync generated data to gh-pages
         run: |
           rsync -av --delete data-sync/public/data/ ghp/data/
           rsync -av data-sync/public/main.m3u ghp/
 
-      - name: Commit en gh-pages
+      - name: Commit and push changes
         run: |
           cd ghp
+          git config user.email "github-actions@github.com"
+          git config user.name "GitHub Actions"
           git add .
-          git commit -m "Actualizar datos publicados" || echo "Sin cambios"
+          git commit -m "Actualización de datos IPTV" || echo "No changes to commit"
           git push origin gh-pages
