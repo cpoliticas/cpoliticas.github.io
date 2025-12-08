@@ -1,13 +1,13 @@
-name: Data Sync
+name: sync_data
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
-  workflow_dispatch:
 
 jobs:
-  sync_data:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,33 +19,32 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.x"
+          python-version: "3.10"
 
       - name: Install PyYAML
         run: pip install pyyaml
 
-      - name: Fetch remote data
-        run: bash data-sync/scripts/fetch.sh
-
+      ###########################################################
+      # GENERAR EL M3U MAESTRO Y LAS CATEGORÍAS
+      ###########################################################
       - name: Generate categorized and master M3U files
         run: bash data-sync/scripts/generate.sh
 
+      ###########################################################
+      # PUBLICAR A GH-PAGES
+      ###########################################################
       - name: Checkout gh-pages branch
         uses: actions/checkout@v3
         with:
           ref: gh-pages
-          path: ghp
+          path: gh-pages
 
       - name: Sync generated data to gh-pages
         run: |
-          rsync -av --delete data-sync/public/data/ ghp/public/data/
-          rsync -av data-sync/public/main.m3u ghp/public/
-
-      - name: Commit and push changes
-        run: |
-          cd ghp
+          cp data-sync/public/*.m3u gh-pages/
+          cd gh-pages
+          git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git config user.name "GitHub Actions"
           git add .
-          git commit -m "Actualización de datos IPTV" || echo "No changes to commit"
-          git push origin gh-pages
+          git commit -m "Update generated M3U files" || true
+          git push
