@@ -25,10 +25,6 @@ jobs:
         run: |
           pip install pyyaml
 
-      - name: Fetch remote data
-        run: |
-          bash data-sync/scripts/fetch.sh
-
       - name: Generate master M3U file
         run: |
           bash data-sync/scripts/generate.sh
