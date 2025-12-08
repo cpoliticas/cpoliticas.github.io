@@ -11,10 +11,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      ###########################################################
+      # CHECKOUT DE LA RAMA MAIN
+      ###########################################################
       - name: Checkout main branch
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+          path: main   # <<< IMPORTANTE: checkout en carpeta separada
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -28,20 +32,24 @@ jobs:
       # GENERAR EL M3U MAESTRO Y LAS CATEGORÍAS
       ###########################################################
       - name: Generate categorized and master M3U files
+        working-directory: main
         run: bash data-sync/scripts/generate.sh
 
       ###########################################################
-      # PUBLICAR A GH-PAGES
+      # CHECKOUT DE GH-PAGES EN OTRA CARPETA
       ###########################################################
       - name: Checkout gh-pages branch
         uses: actions/checkout@v3
         with:
           ref: gh-pages
-          path: gh-pages
+          path: gh-pages   # <<< Carpeta separada para NO destruir nada
 
+      ###########################################################
+      # SINCRONIZAR ARCHIVOS GENERADOS
+      ###########################################################
       - name: Sync generated data to gh-pages
         run: |
-          cp data-sync/public/*.m3u gh-pages/
+          cp main/data-sync/public/*.m3u gh-pages/
           cd gh-pages
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
