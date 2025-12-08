@@ -23,6 +23,37 @@ jobs:
           chmod +x data-sync/scripts/generate.sh
           ./data-sync/scripts/generate.sh
 
+      # NUEVO: Generar el archivo global main.m3u
+      - name: Generar archivo main.m3u
+        run: |
+          echo "#EXTM3U" > data-sync/public/main.m3u
+          echo "" >> data-sync/public/main.m3u
+
+          for d in data-sync/public/data/*; do
+            if [ -d "$d" ]; then
+              country=$(basename "$d")
+              echo "# -------- $country --------" >> data-sync/public/main.m3u
+              echo "" >> data-sync/public/main.m3u
+
+              # Favoritos + sin clasificar
+              if [ -f "$d/favoritos.m3u" ]; then
+                cat "$d/favoritos.m3u" >> data-sync/public/main.m3u
+                echo "" >> data-sync/public/main.m3u
+              fi
+
+              if [ -f "$d/sin-clasificar.m3u" ]; then
+                cat "$d/sin-clasificar.m3u" >> data-sync/public/main.m3u
+                echo "" >> data-sync/public/main.m3u
+              fi
+
+              # Categorías
+              if [ -d "$d/categorias" ]; then
+                for f in "$d"/categorias/*.m3u; do
+                  [ -f "$f" ] && cat "$f" >> data-sync/public/main.m3u && echo "" >> data-sync/public/main.m3u
+                done
+              fi
+            fi
+          done
 
       - name: Configurar git
         run: |
@@ -44,6 +75,7 @@ jobs:
       - name: Copiar datos generados hacia gh-pages
         run: |
           rsync -av --delete data-sync/public/data/ ghp/data/
+          rsync -av data-sync/public/main.m3u ghp/
 
       - name: Commit en gh-pages
         run: |
