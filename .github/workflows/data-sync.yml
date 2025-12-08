@@ -29,7 +29,7 @@ jobs:
         run: |
           bash data-sync/scripts/fetch.sh
 
-      - name: Generate categorized and master M3U files
+      - name: Generate master M3U file
         run: |
           bash data-sync/scripts/generate.sh
 
@@ -39,9 +39,8 @@ jobs:
           ref: gh-pages
           path: ghp
 
-      - name: Sync generated data to gh-pages
+      - name: Sync main.m3u to gh-pages
         run: |
-          rsync -av --delete data-sync/public/data/ ghp/data/
           rsync -av data-sync/public/main.m3u ghp/
 
       - name: Commit and push changes
