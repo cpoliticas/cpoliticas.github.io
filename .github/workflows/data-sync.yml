@@ -22,12 +22,13 @@ jobs:
           python-version: "3.x"
 
       - name: Install PyYAML
-        run: |
-          pip install pyyaml
+        run: pip install pyyaml
 
-      - name: Generate master M3U file
-        run: |
-          bash data-sync/scripts/generate.sh
+      - name: Fetch remote data
+        run: bash data-sync/scripts/fetch.sh
+
+      - name: Generate categorized and master M3U files
+        run: bash data-sync/scripts/generate.sh
 
       - name: Checkout gh-pages branch
         uses: actions/checkout@v3
@@ -35,9 +36,10 @@ jobs:
           ref: gh-pages
           path: ghp
 
-      - name: Sync main.m3u to gh-pages
+      - name: Sync generated data to gh-pages
         run: |
-          rsync -av data-sync/public/main.m3u ghp/
+          rsync -av --delete data-sync/public/data/ ghp/public/data/
+          rsync -av data-sync/public/main.m3u ghp/public/
 
       - name: Commit and push changes
         run: |
